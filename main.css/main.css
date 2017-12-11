@@ -5,56 +5,72 @@ box-sizing: border-box;
 }
 
 /*mobie first*/
-@media screen and (min-width: 360px) {
+@media(min-width: 360px) {
 .dawn {
-background-image: url(..assets/dawn.png);
-background-repeat;
+background-size: cover;
+background-repeat:no-repeat;
 background-position: center;
-height: 100vh;
+height: 100px;
 }
 .kitten-small{
 background-image: url(../assets/kitten-small.png);
-position: absolute;
-top: 30%;
+position: relative;
+margin-top: 30%;
 height:200px;
 width: 100%;
-left: 0%;
+margin-left: 50%;
 }
-
+.kitten-medium, .kitten-large{
+display: none;
+}
+.sunny .night{
+  display: none;
+}
+}
 
 /*tablets*/
 
-@media screen and (min-width: 768px) {
+@media(min-width: 768px) {
 .sunny {
-background-image: url(..assets/sunny-day.jpg);
 background-repeat:no-repeat;
 background-position: center;
-height: 100vh;
+height: 100px;
 }
 .kitten-medium{
 background-image: url(../assets/kitten-medium.png);
-position: absolute;
-top: 30%;
-height:200px;
+position: relative;
+margin-top: 30%;
+height:300px;
 width: 100%;
-left: 0%;
+left: 50%;
 }
-
+.kitten-small, .kitten-large{
+  display: none;
+}
+.dawn .night{
+  display: none;
+}
+}
 /*desktops*/
 
-@media screen and (min-width:1024px){
+@media(min-width:1024px){
 .night {
-background-image: url(..assets/night.jpg);
 background-repeat:no-repeat;
 background-position: center;
 height: 100vh;
 }
 .kitten-large{
-background-image: url(../assets/kitten-large.png);
-position: absolute;
-top: 30%;
-height:200px;
+background-image: url(..assets/kitten-large.png);
+position: relative;
+margin-top: 30%;
+height:400px;
 width: 100%;
-left: 0%;
+margin-left: 50%;
+}
+.kitten-medium, .kitten-small{
+  display: none;
+}
+.dawn .sunny{
+  display: none;
 }
 }
