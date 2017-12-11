@@ -1,0 +1,60 @@
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+}
+
+/*mobie first*/
+@media screen and (min-width: 360px) {
+.dawn {
+background-image: url(..assets/dawn.png);
+background-repeat;
+background-position: center;
+height: 100vh;
+}
+.kitten-small{
+background-image: url(../assets/kitten-small.png);
+position: absolute;
+top: 30%;
+height:200px;
+width: 100%;
+left: 0%;
+}
+
+
+/*tablets*/
+
+@media screen and (min-width: 768px) {
+.sunny {
+background-image: url(..assets/sunny-day.jpg);
+background-repeat:no-repeat;
+background-position: center;
+height: 100vh;
+}
+.kitten-medium{
+background-image: url(../assets/kitten-medium.png);
+position: absolute;
+top: 30%;
+height:200px;
+width: 100%;
+left: 0%;
+}
+
+/*desktops*/
+
+@media screen and (min-width:1024px){
+.night {
+background-image: url(..assets/night.jpg);
+background-repeat:no-repeat;
+background-position: center;
+height: 100vh;
+}
+.kitten-large{
+background-image: url(../assets/kitten-large.png);
+position: absolute;
+top: 30%;
+height:200px;
+width: 100%;
+left: 0%;
+}
+}
